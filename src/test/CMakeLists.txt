@@ -1,7 +1,7 @@
 project(VHACD_TEST)
 include(${CMAKE_COMMON_INC})
 
-include(FindOpenCL)
+include(FindOpenCL OPTIONAL)
 include(FindOpenMP)
 if(OPENMP_FOUND)
     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${OpenMP_C_FLAGS}")
